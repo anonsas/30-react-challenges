@@ -1,8 +1,9 @@
-import './App.css';
+import './App.scss';
+import Animals from './components/Animals/Animals';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <h1> Užduotis</h1>
       <ol style={{ textAlign: 'left' }}>
         <li>
@@ -18,6 +19,8 @@ function App() {
           <strong> random sugeneruotos spalvos </strong>
         </li>
       </ol>
+
+      <Animals />
     </div>
   );
 }

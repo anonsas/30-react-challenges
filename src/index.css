@@ -32,4 +32,10 @@ body {
 
   font-size: 1.6rem;
   min-height: 100vh;
+
+  padding: 2rem;
+  background-image: url('./assets/cheese-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

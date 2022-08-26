@@ -1,4 +1,7 @@
 import React from 'react';
+import './Animals.scss';
+
+import rand from '../../utilities/randColor';
 
 const animals = [
   {
@@ -45,7 +48,24 @@ const animals = [
 ];
 
 function Animals() {
-  return <div>Animals</div>;
+  return (
+    <div className="image-list">
+      {animals.map(({ id, img, animal }) => (
+        <Animal key={id} img={img} animal={animal} />
+      ))}
+    </div>
+  );
+}
+
+function Animal({ img, animal }) {
+  return (
+    <figure className="image">
+      <img src={img} alt={`${animal}-animal`} className="image__photo" />
+      <figcaption className="image__title" style={{ color: rand() }}>
+        {animal}
+      </figcaption>
+    </figure>
+  );
 }
 
 export default Animals;
