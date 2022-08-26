@@ -1,12 +1,12 @@
 import './App.scss';
 import Animals from './components/Animals/Animals';
 import Pokemons from './components/Pokemons/Pokemons';
-import fetchImg from './assets/fetch.png';
+import Books from './components/Books/Books';
 
 function App() {
   return (
     <div>
-      {/* <h1> 1. Užduotis</h1>
+      <h1> 1. Užduotis</h1>
       <ol style={{ textAlign: 'left' }}>
         <li>
           Išrenderinti visus gyvūnus esančius <strong> masyve Animals komponente </strong>
@@ -21,11 +21,10 @@ function App() {
           <strong> random sugeneruotos spalvos </strong>
         </li>
       </ol>
-      */}
 
-      {/* <Animals /> */}
+      <Animals />
 
-      {/* <h2> 2. Užduotis su vienu API</h2>
+      <h2> 2. Užduotis su vienu API</h2>
       <ol className="App" style={{ textAlign: 'left' }}>
         <li>
           Gauti visus duomenis iš{' '}
@@ -37,7 +36,6 @@ function App() {
           <a href="https://reactjs.org/docs/faq-ajax.html">
             https://reactjs.org/docs/faq-ajax.html{' '}
           </a>
-          <img src={fetchImg} alt="fetch" />
         </li>
         <li>
           <strong> Pokemons </strong> komponente turėtų būti panaudotas{' '}
@@ -45,9 +43,28 @@ function App() {
           komponentas, kuris per props gauna <strong>name</strong> ir <strong>url</strong>{' '}
           iš API.
         </li>
-      </ol> */}
+      </ol>
 
       <Pokemons />
+
+      <h1>3. Užduotis naudojant du API</h1>
+      <ol style={{ textAlign: 'left' }}>
+        <li>
+          Nenaudojant bibliotekų paimti duomenis iš{' '}
+          <a href="https://in3.dev/knygos/">https://in3.dev/knygos/</a> ir paduoti{' '}
+          <strong> img , title , author, price</strong> į Book komponentą.
+        </li>
+        <li>
+          Pridėti <strong> loading </strong> jeigu knygų dar nėra.
+        </li>
+        <li>
+          Paimti duomenis iš{' '}
+          <a href="https://in3.dev/knygos/types/">https://in3.dev/knygos/types/</a> ir
+          paduoti atitinkamą tipo pavadinimą į Book komponentą.
+        </li>
+      </ol>
+
+      <Books />
     </div>
   );
 }
