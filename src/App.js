@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Užduotis</h1>
+      <ol style={{ textAlign: 'left' }}>
+        <li>
+          Išrenderinti visus gyvūnus esančius <strong> masyve Animals komponente </strong>
+          . Pernaudojant <strong> vieną komponentą Animal </strong>. Komponentas Animal
+          turi per <strong> props </strong> atvaizduoti atitinkamą gyvūno{' '}
+          <strong>pavadinimą </strong>
+          (kaip figcaption) ir <strong> nuotrauką </strong>, img alt atributas turi
+          rašytis tokiu formatu (pvz. alt="Hippo-animal").
+        </li>
+        <li>
+          Extra užduotis figcaption fono spalva turi būti{' '}
+          <strong> random sugeneruotos spalvos </strong>
+        </li>
+      </ol>
     </div>
   );
 }
