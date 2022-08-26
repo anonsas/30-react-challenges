@@ -1,6 +1,8 @@
 import React from 'react';
 
-function Book({ img, sritis, title, author, price, time }) {
+function Book({ img, field, title, author, price, time }) {
+  const currTime = new Date(time).toLocaleDateString();
+
   return (
     <article className="book">
       <div className="book__img-container">
@@ -8,12 +10,12 @@ function Book({ img, sritis, title, author, price, time }) {
       </div>
 
       <div className="book__details">
-        <p>{sritis}</p>
+        <p>{field}</p>
         <p>{title}</p>
         <p>{author}</p>
         <div className="book__date">
-          <p>{price}</p>
-          <p>{new Date(time).toLocaleDateString()}</p>
+          <p>{price}&euro;</p>
+          <p>{currTime}</p>
         </div>
       </div>
     </article>

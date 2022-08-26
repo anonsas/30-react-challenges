@@ -28,13 +28,13 @@ function Books() {
   return (
     <div className="book-list">
       {books?.map((book) => {
-        const sritis = types?.find((item) => item.id === book.type);
+        const field = types?.find((item) => item.id === book.type);
 
         return (
           <Book
             key={book.id}
             img={book.img}
-            sritis={sritis.title}
+            field={field.title}
             title={book.title}
             author={book.author}
             price={book.price}
